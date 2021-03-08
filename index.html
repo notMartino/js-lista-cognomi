@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <title>Lista Cognomi</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            var listaCognomi = ['Scalvini', 'Venti', 'Masnada', 'Antonelli', 'Chiefa', 'Fazio', 'Graziotti'];
+            listaCognomi.push(prompt('Inseirsci il tuo cognome: '));
+
+            var tuoCognome = listaCognomi[(listaCognomi.length - 1)];
+
+            console.log(listaCognomi);
+            console.log('Il tuo cognome è: ' + tuoCognome);
+
+            listaCognomi.sort();
+            console.log('La lista è stata ordinata!', listaCognomi);
+
+            var cont = 0;
+            while(listaCognomi[cont] != tuoCognome){
+                cont++;
+            }
+            console.log('Ti trovi in posizione: ' + (cont + 1));
+
+        </script>
+    </body>
+</html>
